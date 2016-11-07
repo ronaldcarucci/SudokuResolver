@@ -147,11 +147,8 @@ namespace LibrarySudokuResolver
         public void AutoSolve()
         {
             List<int[,]> zeros = SearchZeros();
-
-            foreach (int[,] zero in zeros)
-                Values[zero[0, 0], zero[0, 1]] = 1;
-
-            ProcessAutoSolve(zeros);
+            
+            ProcessAutoSolve(zeros,0);
         }
 
         /// <summary>
@@ -195,12 +192,28 @@ namespace LibrarySudokuResolver
             return result;
         }
         
-        private void ProcessAutoSolve(List<int[,]> zeros, int current = 0)
+        private bool ProcessAutoSolve(List<int[,]> zeros, int position)
         {
-            while (CheckGrid() == false)
+            if (position == 9*9)
             {
-                Increase(zeros);
+                return true;
             }
+            int line = position / 9;
+            int column = position % 9;
+            if (Values[line, column] != 0)
+                return ProcessAutoSolve(zeros, position + 1);
+
+            for (int number=1 ; number <= 9 ; number++)
+                if (IsInGrid(number,line,column) == false)
+                {
+                    Values[line, column] = number;
+
+                    if (ProcessAutoSolve(zeros, position + 1))
+                        return true;
+
+                }
+            Values[line, column] = 0;
+            return false;
         }
 
         private void CancelAutoSolve(List<int[,]> zeros)
@@ -218,6 +231,24 @@ namespace LibrarySudokuResolver
                 if (index < zeros.Count - 1)
                     Increase(zeros, index + 1);
             }
+        }
+
+        public bool IsInGrid(int number, int line, int column)
+        {
+            for (int i=0; i<Lines;i++)
+            {
+                if (Values[line, i] == number)
+                    return true;
+                if (Values[i, column] == number)
+                    return true;
+            }
+            int tmp1 = line - (line % 3);
+            int tmp2 = column - (column % 3);
+            for (int l = tmp1; l < tmp1 + 3; l++)
+                for (int c = tmp2; c < tmp2 + 3; c++)
+                    if (Values[tmp1, tmp2] == number)
+                        return true;
+            return false;
         }
     }
 }
