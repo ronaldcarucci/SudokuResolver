@@ -27,281 +27,286 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
 
-                <Grid Grid.Row="0" Grid.Column="0">
-                    <TextBox x:Name="txtCase00" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="1">
-                    <TextBox x:Name="txtCase01" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="2">
-                    <TextBox x:Name="txtCase02" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="3">
-                    <TextBox x:Name="txtCase03" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="4">
-                    <TextBox x:Name="txtCase04" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="5">
-                    <TextBox x:Name="txtCase05" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="6">
-                    <TextBox x:Name="txtCase06" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="7">
-                    <TextBox x:Name="txtCase07" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="8">
-                    <TextBox x:Name="txtCase08" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="0">
-                    <TextBox x:Name="txtCase10" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="1">
-                    <TextBox x:Name="txtCase11" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="2">
-                    <TextBox x:Name="txtCase12" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="3">
-                    <TextBox x:Name="txtCase13" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="4">
-                    <TextBox x:Name="txtCase14" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="5">
-                    <TextBox x:Name="txtCase15" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="6">
-                    <TextBox x:Name="txtCase16" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="7">
-                    <TextBox x:Name="txtCase17" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="8">
-                    <TextBox x:Name="txtCase18" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="0">
-                    <TextBox x:Name="txtCase20" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="1">
-                    <TextBox x:Name="txtCase21" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="2">
-                    <TextBox x:Name="txtCase22" FontSize="20" BorderThickness="1,1,3,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="3">
-                    <TextBox x:Name="txtCase23" FontSize="20" BorderThickness="3,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="4">
-                    <TextBox x:Name="txtCase24" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="5">
-                    <TextBox x:Name="txtCase25" FontSize="20" BorderThickness="1,1,3,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="6">
-                    <TextBox x:Name="txtCase26" FontSize="20" BorderThickness="3,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="7">
-                    <TextBox x:Name="txtCase27" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="2" Grid.Column="8">
-                    <TextBox x:Name="txtCase28" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <TextBox x:Name="txtCase00" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <TextBox x:Name="txtCase01" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="2">
+                        <TextBox x:Name="txtCase02" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="3">
+                        <TextBox x:Name="txtCase03" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="4">
+                        <TextBox x:Name="txtCase04" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="5">
+                        <TextBox x:Name="txtCase05" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="6">
+                        <TextBox x:Name="txtCase06" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="7">
+                        <TextBox x:Name="txtCase07" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="8">
+                        <TextBox x:Name="txtCase08" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <TextBox x:Name="txtCase10" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <TextBox x:Name="txtCase11" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="2">
+                        <TextBox x:Name="txtCase12" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="3">
+                        <TextBox x:Name="txtCase13" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="4">
+                        <TextBox x:Name="txtCase14" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="5">
+                        <TextBox x:Name="txtCase15" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="6">
+                        <TextBox x:Name="txtCase16" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="7">
+                        <TextBox x:Name="txtCase17" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="8">
+                        <TextBox x:Name="txtCase18" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0">
+                        <TextBox x:Name="txtCase20" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <TextBox x:Name="txtCase21" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="2">
+                        <TextBox x:Name="txtCase22" FontSize="20" BorderThickness="1,1,3,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="3">
+                        <TextBox x:Name="txtCase23" FontSize="20" BorderThickness="3,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="4">
+                        <TextBox x:Name="txtCase24" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="5">
+                        <TextBox x:Name="txtCase25" FontSize="20" BorderThickness="1,1,3,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="6">
+                        <TextBox x:Name="txtCase26" FontSize="20" BorderThickness="3,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="7">
+                        <TextBox x:Name="txtCase27" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="8">
+                        <TextBox x:Name="txtCase28" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
 
-                <Grid Grid.Row="3" Grid.Column="0">
-                    <TextBox x:Name="txtCase30" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="1">
-                    <TextBox x:Name="txtCase31" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="2">
-                    <TextBox x:Name="txtCase32" FontSize="20" BorderThickness="1,3,3,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="3">
-                    <TextBox x:Name="txtCase33" FontSize="20" BorderThickness="3,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="4">
-                    <TextBox x:Name="txtCase34" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="5">
-                    <TextBox x:Name="txtCase35" FontSize="20" BorderThickness="1,3,3,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="6">
-                    <TextBox x:Name="txtCase36" FontSize="20" BorderThickness="3,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="7">
-                    <TextBox x:Name="txtCase37" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="3" Grid.Column="8">
-                    <TextBox x:Name="txtCase38" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="0">
-                    <TextBox x:Name="txtCase40" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="1">
-                    <TextBox x:Name="txtCase41" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="2">
-                    <TextBox x:Name="txtCase42" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="3">
-                    <TextBox x:Name="txtCase43" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="4">
-                    <TextBox x:Name="txtCase44" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="5">
-                    <TextBox x:Name="txtCase45" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="6">
-                    <TextBox x:Name="txtCase46" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="7">
-                    <TextBox x:Name="txtCase47" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="4" Grid.Column="8">
-                    <TextBox x:Name="txtCase48" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="0">
-                    <TextBox x:Name="txtCase50" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="1">
-                    <TextBox x:Name="txtCase51" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="2">
-                    <TextBox x:Name="txtCase52" FontSize="20" BorderThickness="1,1,3,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="3">
-                    <TextBox x:Name="txtCase53" FontSize="20" BorderThickness="3,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="4">
-                    <TextBox x:Name="txtCase54" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="5">
-                    <TextBox x:Name="txtCase55" FontSize="20" BorderThickness="1,1,3,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="6">
-                    <TextBox x:Name="txtCase56" FontSize="20" BorderThickness="3,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="7">
-                    <TextBox x:Name="txtCase57" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
-                <Grid Grid.Row="5" Grid.Column="8">
-                    <TextBox x:Name="txtCase58" FontSize="20" BorderThickness="1,1,1,3"/>
-                </Grid>
+                    <Grid Grid.Row="3" Grid.Column="0">
+                        <TextBox x:Name="txtCase30" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="1">
+                        <TextBox x:Name="txtCase31" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="2">
+                        <TextBox x:Name="txtCase32" FontSize="20" BorderThickness="1,3,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="3">
+                        <TextBox x:Name="txtCase33" FontSize="20" BorderThickness="3,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="4">
+                        <TextBox x:Name="txtCase34" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="5">
+                        <TextBox x:Name="txtCase35" FontSize="20" BorderThickness="1,3,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="6">
+                        <TextBox x:Name="txtCase36" FontSize="20" BorderThickness="3,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="7">
+                        <TextBox x:Name="txtCase37" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="8">
+                        <TextBox x:Name="txtCase38" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="0">
+                        <TextBox x:Name="txtCase40" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="1">
+                        <TextBox x:Name="txtCase41" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="2">
+                        <TextBox x:Name="txtCase42" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="3">
+                        <TextBox x:Name="txtCase43" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="4">
+                        <TextBox x:Name="txtCase44" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="5">
+                        <TextBox x:Name="txtCase45" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="6">
+                        <TextBox x:Name="txtCase46" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="7">
+                        <TextBox x:Name="txtCase47" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="8">
+                        <TextBox x:Name="txtCase48" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="0">
+                        <TextBox x:Name="txtCase50" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="1">
+                        <TextBox x:Name="txtCase51" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="2">
+                        <TextBox x:Name="txtCase52" FontSize="20" BorderThickness="1,1,3,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="3">
+                        <TextBox x:Name="txtCase53" FontSize="20" BorderThickness="3,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="4">
+                        <TextBox x:Name="txtCase54" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="5">
+                        <TextBox x:Name="txtCase55" FontSize="20" BorderThickness="1,1,3,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="6">
+                        <TextBox x:Name="txtCase56" FontSize="20" BorderThickness="3,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="7">
+                        <TextBox x:Name="txtCase57" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="8">
+                        <TextBox x:Name="txtCase58" FontSize="20" BorderThickness="1,1,1,3"/>
+                    </Grid>
 
 
-                <Grid Grid.Row="6" Grid.Column="0">
-                    <TextBox x:Name="txtCase60" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="1">
-                    <TextBox x:Name="txtCase61" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="2">
-                    <TextBox x:Name="txtCase62" FontSize="20" BorderThickness="1,3,3,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="3">
-                    <TextBox x:Name="txtCase63" FontSize="20" BorderThickness="3,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="4">
-                    <TextBox x:Name="txtCase64" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="5">
-                    <TextBox x:Name="txtCase65" FontSize="20" BorderThickness="1,3,3,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="6">
-                    <TextBox x:Name="txtCase66" FontSize="20" BorderThickness="3,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="7">
-                    <TextBox x:Name="txtCase67" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="6" Grid.Column="8">
-                    <TextBox x:Name="txtCase68" FontSize="20" BorderThickness="1,3,1,1"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="0">
-                    <TextBox x:Name="txtCase70" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="1">
-                    <TextBox x:Name="txtCase71" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="2">
-                    <TextBox x:Name="txtCase72" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="3">
-                    <TextBox x:Name="txtCase73" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="4">
-                    <TextBox x:Name="txtCase74" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="5">
-                    <TextBox x:Name="txtCase75" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="6">
-                    <TextBox x:Name="txtCase76" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="7">
-                    <TextBox x:Name="txtCase77" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="7" Grid.Column="8">
-                    <TextBox x:Name="txtCase78" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="0">
-                    <TextBox x:Name="txtCase80" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="1">
-                    <TextBox x:Name="txtCase81" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="2">
-                    <TextBox x:Name="txtCase82" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="3">
-                    <TextBox x:Name="txtCase83" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="4">
-                    <TextBox x:Name="txtCase84" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="5">
-                    <TextBox x:Name="txtCase85" FontSize="20" BorderThickness="1,1,3,1"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="6">
-                    <TextBox x:Name="txtCase86" FontSize="20" BorderThickness="3,1,1,1"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="7">
-                    <TextBox x:Name="txtCase87" FontSize="20"/>
-                </Grid>
-                <Grid Grid.Row="8" Grid.Column="8">
-                    <TextBox x:Name="txtCase88" FontSize="20"/>
+                    <Grid Grid.Row="6" Grid.Column="0">
+                        <TextBox x:Name="txtCase60" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="1">
+                        <TextBox x:Name="txtCase61" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="2">
+                        <TextBox x:Name="txtCase62" FontSize="20" BorderThickness="1,3,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="3">
+                        <TextBox x:Name="txtCase63" FontSize="20" BorderThickness="3,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="4">
+                        <TextBox x:Name="txtCase64" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="5">
+                        <TextBox x:Name="txtCase65" FontSize="20" BorderThickness="1,3,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="6">
+                        <TextBox x:Name="txtCase66" FontSize="20" BorderThickness="3,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="7">
+                        <TextBox x:Name="txtCase67" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="8">
+                        <TextBox x:Name="txtCase68" FontSize="20" BorderThickness="1,3,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="0">
+                        <TextBox x:Name="txtCase70" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="1">
+                        <TextBox x:Name="txtCase71" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="2">
+                        <TextBox x:Name="txtCase72" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="3">
+                        <TextBox x:Name="txtCase73" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="4">
+                        <TextBox x:Name="txtCase74" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="5">
+                        <TextBox x:Name="txtCase75" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="6">
+                        <TextBox x:Name="txtCase76" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="7">
+                        <TextBox x:Name="txtCase77" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="8">
+                        <TextBox x:Name="txtCase78" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="0">
+                        <TextBox x:Name="txtCase80" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="1">
+                        <TextBox x:Name="txtCase81" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="2">
+                        <TextBox x:Name="txtCase82" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="3">
+                        <TextBox x:Name="txtCase83" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="4">
+                        <TextBox x:Name="txtCase84" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="5">
+                        <TextBox x:Name="txtCase85" FontSize="20" BorderThickness="1,1,3,1"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="6">
+                        <TextBox x:Name="txtCase86" FontSize="20" BorderThickness="3,1,1,1"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="7">
+                        <TextBox x:Name="txtCase87" FontSize="20"/>
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.Column="8">
+                        <TextBox x:Name="txtCase88" FontSize="20"/>
+                    </Grid>
                 </Grid>
             </Grid>
 
             <Grid Grid.Column="1">
                 <StackPanel>
                     <Label FontSize="22">Sudoku Resolver</Label>
+                    <Button x:Name="btnInsertValues" Content="Insert Original Values" Click="btnInsertValues_Click"/>
+                    <Button x:Name="btnValidValues" Content="Valid Original Values" Click="btnValidValues_Click"/>
+                    <Button x:Name="btnResetValues" Content="Reset Original Values" Click="btnResetValues_Click"/>
                     <Button x:Name="btnSolve" Content="Solve" Click="btnSolve_Click"/>
                 </StackPanel>
             </Grid>

@@ -141,14 +141,23 @@ namespace LibrarySudokuResolver
             return true;
         }
 
+
+        
         /// <summary>
         /// Solve automaticaly the grid
         /// </summary>
-        public void AutoSolve()
+        public bool AutoSolve()
         {
             List<int[,]> zeros = SearchZeros();
+            ProcessAutoSolve(Values, 0, 0);
             
-            ProcessAutoSolve(zeros,0);
+            if (CheckGrid() == false)
+            {
+                CancelAutoSolve(zeros);
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
@@ -192,28 +201,44 @@ namespace LibrarySudokuResolver
             return result;
         }
         
-        private bool ProcessAutoSolve(List<int[,]> zeros, int position)
+        private bool ProcessAutoSolve(int[,] values, int row, int col)
         {
-            if (position == 9*9)
+            if (row < 9 && col < 9)
             {
-                return true;
-            }
-            int line = position / 9;
-            int column = position % 9;
-            if (Values[line, column] != 0)
-                return ProcessAutoSolve(zeros, position + 1);
-
-            for (int number=1 ; number <= 9 ; number++)
-                if (IsInGrid(number,line,column) == false)
+                if (values[row, col] != 0)
+                    if ((col + 1) < 9)
+                        return ProcessAutoSolve(values, row, col + 1);
+                    else 
+                        if ((row + 1) < 9)
+                            return ProcessAutoSolve(values, row + 1, 0);
+                        else
+                            return true;
+                else
                 {
-                    Values[line, column] = number;
+                    for (int i = 0; i < 9; ++i)
+                        if (IsAvailable(values, row, col, i + 1))
+                        {
+                            values[row, col] = i + 1;
 
-                    if (ProcessAutoSolve(zeros, position + 1))
-                        return true;
-
+                            if ((col + 1) < MaxValue)
+                                if (ProcessAutoSolve(values, row, col + 1))
+                                    return true;
+                                else
+                                    values[row, col] = 0;
+                            else 
+                                if ((row + 1) < MaxValue)
+                                    if (ProcessAutoSolve(values, row + 1, 0))
+                                        return true;
+                                    else
+                                        values[row, col] = 0;
+                            else
+                                return true;
+                        }
                 }
-            Values[line, column] = 0;
-            return false;
+
+                return false;
+            }
+            else return true;
         }
 
         private void CancelAutoSolve(List<int[,]> zeros)
@@ -233,22 +258,22 @@ namespace LibrarySudokuResolver
             }
         }
 
-        public bool IsInGrid(int number, int line, int column)
+        private bool IsAvailable(int[,] puzzle, int row, int col, int num)
         {
-            for (int i=0; i<Lines;i++)
+            int rowStart = (row / 3) * 3;
+            int colStart = (col / 3) * 3;
+
+            for (int i = 0; i < 9; ++i)
             {
-                if (Values[line, i] == number)
-                    return true;
-                if (Values[i, column] == number)
-                    return true;
+                if (puzzle[row, i] == num)
+                    return false;
+                if (puzzle[i, col] == num)
+                    return false;
+                if (puzzle[rowStart + (i % 3), colStart + (i / 3)] == num)
+                    return false;
             }
-            int tmp1 = line - (line % 3);
-            int tmp2 = column - (column % 3);
-            for (int l = tmp1; l < tmp1 + 3; l++)
-                for (int c = tmp2; c < tmp2 + 3; c++)
-                    if (Values[tmp1, tmp2] == number)
-                        return true;
-            return false;
+
+            return true;
         }
     }
 }
