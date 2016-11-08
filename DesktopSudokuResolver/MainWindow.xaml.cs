@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LibrarySudokuResolver;
+using System.Text.RegularExpressions;
 
 namespace DesktopSudokuResolver
 {
@@ -495,11 +496,6 @@ namespace DesktopSudokuResolver
             EnableAll(true);
         }
 
-        private void btnResetValues_Click(object sender, RoutedEventArgs e)
-        {
-            resetValues();
-        }
-
         private void btnValidValues_Click(object sender, RoutedEventArgs e)
         {
             EnableContainingValues();
@@ -692,6 +688,27 @@ namespace DesktopSudokuResolver
             txtCase86.IsEnabled = value;
             txtCase87.IsEnabled = value;
             txtCase88.IsEnabled = value;
+        }
+
+        private static bool IsTextAllowed(string text)
+        {
+            Regex regex = new Regex("[^0-9]"); //regex that matches disallowed text
+            return !regex.IsMatch(text);
+        }
+        
+
+        private new void PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+             e.Handled = !IsTextAllowed(e.Text);
+        }
+
+        private void btnCheck_Click(object sender, RoutedEventArgs e)
+        {
+            LibrarySudokuResolver.Grid grid = new LibrarySudokuResolver.Grid(getValuesInGrid());
+            if (grid.CheckGrid())
+                MessageBox.Show("There are not error in this grid !", "Success");
+            else
+                MessageBox.Show("There are error(s) in this grid !", "Error");
         }
     }
 }
